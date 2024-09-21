@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif; /* font for the body */
+        margin: 0; /* remove the default margin */
+        padding: 0; /* remove the default padding */
+        height: 100vh; /* 100% of the viewport height */
+        display: flex; /* make the body a flex container */
+        justify-content: center; /* center horizontally */
+        align-items: center; /* center vertically */
+        background-color: #011f05;
+      }
+
+      .card {
+        background-color: #06a442d6;
+        padding: 20px; /* padding inside the card */
+        border-radius: 8px; /* rounded corners */
+        width: 300px; /* width of the card */
+      }
+      h1 {
+        color: #ddead9;
+        text-align: center; /* center the heading */
+        margin-bottom: 20px; /* space between the heading and the form */
+      }
+      form {
+        display: flex; /* make the form a flex container */
+        flex-direction: column; /* align the form elements vertically */
+      }
+
+      /* want placeholder text to be visible even when the input is focused */
+
+      input {
+        padding: 10px; /* padding inside the input */
+        margin-bottom: 10px; /* space between the input fields */
+        border: 2px solid black; /* border around the input */
+        border-radius: 5px; /* rounded corners */
+        background-color: hsla(109, 26%, 92%, 0.904);
+      }
+      input:hover {
+        background-color: #f1f1f1; /* background color of the input */
+      }
+      input::placeholder {
+        /* placeholder text */
+        color: #000000;
+      }
+      button {
+        padding: 10px; /* padding inside the button */
+        border: none; /* remove the border */
+        border-radius: 5px; /* rounded corners */
+        background-color: #074a1e; /* background color of the button */
+        color: #ffffff; /* text color */
+        cursor: pointer; /* change the cursor to a pointer */
+        font-size: 16px; /* font size */
+      }
+      button:hover {
+        background-color: #0d3d13; /* background color of the button */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Login</h1>
+      <form>
+        <input type="email" name="email" placeholder="Email" />
+        <input type="password" name="password" placeholder="Password" />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
