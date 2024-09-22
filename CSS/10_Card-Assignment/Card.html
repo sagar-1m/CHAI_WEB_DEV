@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #71b7e6, #44294f);
+      }
+
+      .container h1 {
+        text-align: center;
+
+        color: #333;
+        margin: 20px 0;
+      }
+
+      .card {
+        width: 300px;
+        height: 400px;
+        background-color: #e5e2ea;
+        margin: 20px;
+        display: inline-block;
+
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden; /* To hide the overflow content */
+      }
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 10px 0;
+
+        color: #333;
+      }
+
+      p {
+        margin: 5px 10px;
+
+        color: #333;
+      }
+      .main-heading {
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        margin: 10px 0;
+        color: rgb(63, 38, 4);
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sub-p {
+        font-size: 15px;
+        font-weight: bold;
+        color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      button {
+        width: 90%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      .discount {
+        color: rgb(196, 92, 92);
+        font-style: oblique;
+      }
+
+      .date {
+        color: #053868;
+        font-style: italic;
+      }
+
+      .Album {
+        color: #680568;
+        font-style: italic;
+      }
+
+      button:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Different Cards Templates</h1>
+
+      <div class="card">
+        <img
+          src="../10_Card-Assignment/images/showpiece.jpg.jpg"
+          alt="Showpiece"
+        />
+        <h2>Showpiece</h2>
+        <p class="main-heading">This is a beautiful showpiece</p>
+        <p class="sub-p">Price: 1000</p>
+        <p class="sub-p discount">Discount: 10%</p>
+        <button style="background-color: brown">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="../10_Card-Assignment/images/pizza.jpg.jpg" alt="Pizza" />
+        <h2>Pizza</h2>
+        <p class="main-heading">This is a delicious pizza</p>
+        <p class="sub-p">Price: 500</p>
+        <p class="sub-p discount">Discount: 10%</p>
+        <button style="background-color: #4caf50">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img
+          src="../10_Card-Assignment/images/twitter.jpg.jpg"
+          alt="Twitter Post"
+        />
+        <h2>Twitter Post</h2>
+        <p class="main-heading">Heaven on Earth</p>
+        <p class="sub-p">User: @Sagar</p>
+        <p class="sub-p date">Date: 12/12/2020</p>
+        <button style="background-color: #2698e3">Like Post</button>
+      </div>
+
+      <div class="card">
+        <img src="../10_Card-Assignment/images/song.jpg.jpg" alt="Song" />
+        <h2>Song</h2>
+        <p class="main-heading">Lift Kara De</p>
+        <p class="sub-p">Artist: Adnan Sami</p>
+        <p class="sub-p Album">Album: Kabhi To Nazar Milao</p>
+        <button style="background-color: #3f3e8e">Play Song</button>
+      </div>
+    </div>
+  </body>
+</html>
