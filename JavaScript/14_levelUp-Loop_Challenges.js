@@ -155,4 +155,4 @@ for (let tea of teaCollections) {
   }
   shortTeas.push(tea);
 }
-console.log(shortTeas); // ["black", "green", "oolong", "white", "herherbal"]
+console.log(shortTeas); // ["black", "green", "oolong", "white", "herbal"]
