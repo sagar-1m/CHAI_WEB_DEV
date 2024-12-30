@@ -38,7 +38,7 @@ console.log(total); // 10
 4. Write a function named `processTeaOrder` that makes another function, `makeTea`, as a paramter and calls it with the argument `"black tea"`. 
 Return the result of the `makeTea` function.
 */
-//higher order function
+//higher order function = a function that takes another function as a parameter or returns a function as a result or both
 function processTeaOrder(makeTea) {
   // makeTea is the parameter of the function processTeaOrder
   return makeTea("black tea");
@@ -64,3 +64,4 @@ let teaMaker = createTeaMaker();
 let message = teaMaker("green tea");
 // The function teaMaker is called with the argument "green tea" and the result is stored in the variable message
 console.log(message); // Making green tea
+// this above example has some js behaviour called closure, which is a function that has access to the outer function's scope even after the outer function has returned  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
